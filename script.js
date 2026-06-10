@@ -253,7 +253,6 @@ function envoyerPanierWhatsApp() {
     let total = 0;
     panier.forEach((produit, index) => {
         message += `${index +1}. ${produit.nom} - ${produit.prix.toLocaleString()} FCFA\n`;
-        message += ` Lien photo : ${window.location.origin}/${produit.image}\n\n`;
         total += produit.prix;
 });
 message += `\Total de la commande : ${total.toLocaleString()} FCFA`;
