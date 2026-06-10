@@ -255,10 +255,16 @@ function envoyerPanierWhatsApp() {
         message += `${index +1}. ${produit.nom} - ${produit.prix.toLocaleString()} FCFA\n`;
         total += produit.prix;
 });
-message += `\Total de la commande : ${total.toLocaleString()} FCFA`;
+message += `\nTotal de la commande : ${total.toLocaleString()} FCFA`;
  const numero = "24174229818";
- const lienWhatsApp = `https://wa.me/${numero}? text=${encodeURIComponent(message)}`;
-  window.open(lienWhatsApp, '_blank');
+ const lienWhatsApp = "https://wa.me/" + numero + "?text=" + encodeURIComponent(message);
+
+ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+ if (isMobile) {
+    window.location.href = lienWhatsApp;
+ } else {
+    window.open(lienWhatsApp, '_blank');
+ }  
 }
 function viderPanier() {
     if (confirm("Voulez-vous vraiment vider votre panier")) {
