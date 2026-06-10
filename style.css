@@ -1,0 +1,133 @@
+/* Style general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+/* On range le menu en haut */
+nav ul {
+    background-color: #333;
+    padding: 0;
+    list-style: none;
+    display: flex; /* Aligne les Liens sur une ligne*/
+    justify-content: center;
+    margin: 0;
+    gap: 15px;
+    align-items: center;
+}
+nav ul li {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+nav ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* gerer les logo*/
+.marques-bar {
+    text-align: center;
+    background: antiquewhite;
+    padding: 20px;
+}
+#liste-marques {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 30px;
+}
+.logo-item {
+    width: 100px;
+    height: auto;
+    filter: grayscale(20%);
+    transition: 0.3s;
+}
+.logo-item:hover {
+    transform: scale(1.1);
+}
+.cart-icon {
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: #333;
+    border-radius: 60px;
+    color: antiquewhite;
+    font-weight: bold;
+}
+.panier-actions {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+}
+.btn-valider {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-vider {
+    background-color: #333;
+    color: antiquewhite;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.grille-produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.produit-card {
+    background-color: antiquewhite;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.produit-card img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.produit-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+.produit-card p.prix {
+    color: #25D366;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+.produit-card button {
+    background-color: black;
+    color: antiquewhite;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.produit-card button:hover {
+    background-color: #333;
+}
+footer {
+    background-color: #333;
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 40px;
+}
+footer p {
+    margin: 5px 0;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vente de Smartphones au Gabon Meilleurs Prix Iphone, Samsung, Tecno</title>
+    <meta name="description" content="Decouvrez les derniers Smartphones au Gabon. Iphone, Samsung, Tecno, Infinix au meilleur prix avec paiement a la livraison.">
+    <meta property="og:title" content="Boutique Mobile Gabon - Smartphones Neufs">
+    <meta property="og:description" content="Achetez votre telephone en un clic au Gabon.">
+    <meta property="og:image" content="image/
+    logo_boutique.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo_boutique">
+                <h1>Boutique Mobile Gabon</h1>
+            </div>
+            <ul class="menu">
+                <li><a
+                href="#accueil">Accueil</a></li>
+                <li><a
+                href="#catalogue">Nos Telephones</a></li>
+                <li><a
+                href="#contact">Contact</a></li>
+                <span class="cart-icon"
+                onclick="envoyerPanierWhatsApp()"
+                style="cursor: pointer;">
+                        🛒 Panier(<span id="cart-count">0</span>)
+                </span>
+                <div class="panier-actions">
+                    <button onclick="viderPanier()" class="btn-vider">Vider🗑️</button>
+                    <button onclick="envoyerPanierWhatsApp()" class="btn-valider">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Les Meilleurs Smartphones, au meilleur prix.</h2>
+        <p>Livraison partout au Gabon🏍️/🚆;Paiment a la livraison</p>
+    </section>
+    <section class="marques-bar">
+        <h3>Nos Marques</h3>
+        <div id="liste-marques">
+            <a href="#catalogue"
+                onclick="afficherProduits('iphone')">
+                <img src="marque/iphone.jpg" alt="Iphone" class="logo-item">
+            </a>
+            <a href="#catalogue"
+                onclick="afficherProduits('samsung')">
+                 <img src="marque/samsung.jpg" alt="Samsung" class="logo-item">
+            </a>
+            <a href="#catalogue"
+                onclick="afficherProduits('tecno')">
+                <img src="marque/tecno.jpg" alt="Tecno" class="logo-item">
+            </a>
+            <a href="#catalogue"
+                onclick="afficherProduits('infinix')">
+                <img src="marque/infinix.jpg" alt="Infinix" class="logo-item"
+            </a>
+            <a href="#catalogue"
+                onclick="afficherProduits('electromenager')">
+                <img src="marque/electromenager.jpg" alt="Electromenager" class="logo-item"
+            </a> 
+             <a href="#catalogue"
+                onclick="afficherProduits('nos_services')">
+                 <img src="marque/service.jpg" alt="Nos Services" class="logo-item">
+            </a>                                                                       
+        </div>
+    </section>
+    <main>
+        <section class="section-boutique">
+            <h2 class="titre-intermediaire">Nos Smartphones disponibles</h2>
+            <div id="catalogue" class="grille-produits">           
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Boutique Mobile Gabon - Tous droits reserver.</p>
+        <p>Contactez-nous sur whatsapp : +241 74 22 98 18</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
